@@ -128,7 +128,7 @@ fn main() {
 
     for (name, interface) in interfaces {
         if interface.contains(":") {
-            println!("export type {}  = {{\n{}}}\n", name, interface);
+            println!("export type {} = {{\n{}}}\n", name, interface);
         } else {
             println!("export type {} = {}\n", name, interface);
         }
